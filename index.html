@@ -4,12 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./estilos.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
     <title>CARDENO VINOS</title>
 </head>
 <body>
 
-    <h1>PRIMER ENTREGA TRABAJO FINAL</h1>
+<!--header-->
+<header class="header__fondo">
+      <img src="img/logo.jpg" alt="Logo Cardeno Vinos" class="header__img">
+    
+  </header> 
 
+<!--nav-->
+<nav class="navbar">
+<ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Nosotros</a></li>
+    <li><a href="#">Productos</a></li>
+    <li><a href="#">Promociones</a></li>
+    <li><a href="#">Ubicación</a></li>   
+    
+</ul>
+</nav>
+
+<!--Productos-->
+<section class="container productos">
+    <h2 class="title">PRODUCTOS</h2>
+    <p>En nuestro local podés encontrar más de 250 etiquetas de vinos y espumosos, además de las más ricas cervezas artesanales e industriales.
+    Los destilados y whiskies forman parte de nuestro stock permanente. Y a todo esto lo podés acompañas con unas extraordinarias delicatessen </p>
+
+</section> 
+
+<!--Promociones-->
+<section class="container promociones">
+    <h2 class="title">PROMOCIONES</h2>
+    <p>Tres promos imperdibles para el mes del amigo!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam rerum quidem voluptatem unde sint.</p>
+</section> 
+
+<!--Encuesta-->
+<input type="checkbox" class="barra__checkbox">
+    <label class="barra" for="check">*</label>
+    <div class="barra__panel">
+        <p>Qué producto te gustaría que esté en promo el mes que viene?</p>
+        <input id= "name" type="text" placeholder="Producto" class="barra__inp" />
+        <input id= "marca" type="text" placeholder="De qué marca?" class="barra__inp"/>
+        <div id="mostrar">
+            <button id=guardar class="barra__btn">Guardar</button>
+            <button id=mostrar2 class="barra__btn">Mostrar</button>
+        </div>
+       
+    </div>
+
+<!--Nosotros-->
+<section class="container nosotros">
+    <h2 class="title">¿QUIÉNES SOMOS?</h2>
+    <img src="./img/nosotros.jpg" alt="Jorge y José, dueños del bar" class="nos__img">
+    <p>Somos José y Jorge, dos amigos que decidieron reinventarse y emprender en este fantástico camino.
+    Estamos acompañados y asesorados por grandes profesionales que nos ayudan a brindarte lo mejor.</p>
+</section>
+
+<!--Ubicación-->
+<section class="container ubicacion">
+    <h2 class="title">UBICACIÓN</h2>
+</section>
+
+
+<footer>
+
+</footer>
+    
+<!--javascript-->
     <script src="./app.js"></script>
 </body>
 </html>

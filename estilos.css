@@ -1,0 +1,149 @@
+
+/*body*/
+body {
+	text-align: center;
+	font: 300, 20px/1.7;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(252, 229, 209);
+	margin: 0;
+	padding: 0;
+	
+}
+
+p{
+	font-size: 20px;
+	color:sienna;
+	font-style: italic;
+	font-weight: bolder;
+}
+
+/*Header*/
+
+.header__fondo{
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+	background-image: url(img/fondo.jpg);
+}
+
+
+/*Nav*/
+.navbar{
+	word-spacing: 50px;
+	font-size: 30px;
+	letter-spacing: 2px;
+	padding: 15px;
+	font-family: 'Stint Ultra Condensed', cursive;
+
+}
+
+.navbar a {
+	font-weight:bolder;
+	text-decoration:none;
+	color: sienna;
+}
+
+.navbar ul li {
+	display: inline;
+	list-style: none;
+}
+
+/*Container - Titulos*/
+.container{
+	padding: 60px 0;
+}
+
+.title{
+	font-size: 60px;
+	font-family: 'Stint Ultra Condensed', cursive;
+	color: sienna;
+	margin-top: 10px;
+	letter-spacing: 2px;
+	
+}
+
+.title__h3{
+	font-size: 40px;
+	font-family: 'Stint Ultra Condensed', cursive;
+	color: blueviolet;
+}
+
+/*Nosotros*/
+.nosotros{
+	background-color:burlywood;
+}
+
+.nos__img{
+	height: 300px;
+	width: 300px;
+}
+
+/*Productos*/
+
+.productos{
+	background-image: url(./img/wine-2933943_1280.jpg);
+}	
+
+
+/*Promociones*/
+.promociones{
+	background-image: url(./img/dibujo\ botella.jpg);
+}
+
+/*Ubicación*/
+.ubicacion{
+	background-image: url(./img/ubicacion.jpg);
+}
+
+
+/*Encuesta*/
+.barra {
+	width: 25px;
+	height: 40px;
+	background: #c77d4c;
+	border-radius: 0.5rem;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	font-size: 25px;
+	color: slategrey;
+	text-align: center;
+	transition: left 0.7s; }
+  
+  .barra__checkbox:checked ~ .barra {
+	left: 40%;
+	border: 0 0.5rem 0.5rem 0; }
+  
+  .barra__panel {
+	width: 25%;
+	height: 40%;
+	background: #c77d4c;
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: left 0.4s; }
+
+	.barra__panel p {
+	  font-size: 15px;
+	  letter-spacing: 4px; }
+  
+  .barra__checkbox:checked ~ .barra__panel {
+	left: 0; }
+  
+  .barra__checkbox {
+	display:none; }
+
+	.barra__inp{
+		margin:10px;
+		border-color: chocolate;
+	}
+
+	.barra__btn{
+		margin: 10px;
+		border-color: chocolate;
+		font-weight:lighter
+	}

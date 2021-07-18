@@ -1,3 +1,4 @@
+
 //Variables globales
 
 const marca = "Cardeno Vinos"
@@ -73,5 +74,69 @@ const VinoEspumante = new Vino ("Brut","Novecento", 1480)
 
 console.log(VinoTinto)
 VinoTinto.descuento()
+
+
+//promo mes próximo
+
+class prodPromo{
+    constructor (name, marca){
+        this.name = name
+        this.marca = marca
+    }
+}
+
+const Lista = []
+
+function nextPromo (){
+    const name = document.getElementById("name").value
+    const marca = document.getElementById("marca").value
+
+    let init = JSON.parse(localStorage.getItem("Lista"))
+    
+    if(localStorage.getItem(Lista) != null){
+        const rtadoPromo = new prodPromo (name,marca)
+        init.push(rtadoPromo)
+        localStorage.setItem("Lista",JSON.stringify(init))
+    } else{
+        localStorage.clear()
+        const rtadoPromo = new prodPromo (name,marca)
+        Lista.push(rtadoPromo)
+        localStorage.setItem("Lista",JSON.stringify(Lista))
+    }
+
+    console.log(Lista)
+    
+}
+
+const btnGuardar = document.getElementById("guardar")
+btnGuardar.addEventListener("click", nextPromo)
+
+
+
+function mostrarPromo() {
+
+    let imprimir = JSON.parse(localStorage.getItem("Lista"))
+
+    const mostrar = document.getElementById("mostrar")
+    let contenedor = document.createElement("div")
+    mostrar.appendChild(contenedor)
+
+    Lista.forEach(element =>{
+    
+    contenedor.innerHTML=
+   `<div>
+        <p>${element.name}</p>
+        <p>${element.marca}</p>
+    </div>`;
+    
+})
+    
+}
+
+mostrarPromo()
+
+const btnMostrar = document.getElementById("mostrar2")
+btnMostrar.addEventListener("click", mostrarPromo)
+
 
 

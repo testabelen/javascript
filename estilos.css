@@ -26,6 +26,12 @@ p{
 	background-image: url(img/fondo.jpg);
 }
 
+.header__img{
+	width: 150px;
+	height: 150px;
+
+}
+
 
 /*Nav*/
 .navbar{

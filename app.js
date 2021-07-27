@@ -1,9 +1,10 @@
 
+
 //Variables globales
 
 const marca = "Cardeno Vinos"
 
-//Saludo e ingreso
+/*Saludo e ingreso
 
 let nombre = prompt("Cuál es tu nombre?")
 
@@ -15,7 +16,22 @@ if (edad >= 18){
     alert(saludo + " "+ "seguí navegando por nuestra web y llevate las mejores ofertas!");
 }else {
     alert(nombre + "," + "volvé con un mayor o cuando tengas 18, estaremos esperándote" )
-}
+}*/
+
+
+//Animaciones
+$(".header__img").animate({ 
+    opacity:'0.5',
+    height:'250px',
+    width:'250px',
+   }, 
+    "5000",            
+    );
+
+    $(".title").slideUp(2000)
+                .delay(1000)
+                .slideDown(2000);
+     
 
 //Objeto: Cerveza
 
@@ -28,9 +44,7 @@ class Cerveza {
         this.precio = precio;
     }
 
-    publicidad (){
-        alert(this.marca + " " + "te ofrece para este mes un 10% off en todos sus productos en" + " " + this.envase)
-    }
+
 
     precioPubli (){
         let precioDescuento = this.precio = this.precio / 1.10;
@@ -47,6 +61,8 @@ console.log(CervezaNegra)
 
 CervezaIpa.publicidad();
 CervezaIpa.precioPubli();
+
+
 
 //Objeto: Vino
 

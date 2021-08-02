@@ -17,6 +17,16 @@ p{
 	font-weight: bolder;
 }
 
+button{
+	background-color: rosybrown;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: salmon;
+	color: pink;
+	font-size: 14px;
+	padding: 10px 25px;
+}
+
 /*Header*/
 
 .header__fondo{
@@ -55,7 +65,7 @@ p{
 }
 
 /*Container - Titulos*/
-.container{
+.contenedor{
 	padding: 60px 0;
 }
 
@@ -153,3 +163,46 @@ p{
 		border-color: chocolate;
 		font-weight:lighter
 	}
+
+	/*Ventana Emergente*/
+.modal__container{
+	display: flex;
+	background-color: #be5b18;
+	align-items: center;
+	justify-content: center;
+	position:absolute;
+	pointer-events: none;
+	opacity: 0;
+	top: -30px;
+	left: -50px;
+	height: 50vh;
+	width: 50vh;
+	margin: 50vh; 
+	opacity: 0;
+  
+}
+
+.modal h1{
+	margin: 0;
+
+}
+
+.modal p{
+	opacity: 0.7;
+}
+
+.show {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modal{
+	background-color: antiquewhite;
+	width: 400px;
+	max-width: 100%;
+	padding: 30px 50px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+

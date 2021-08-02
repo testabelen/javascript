@@ -1,22 +1,29 @@
+/*$("#modalContainer").prepend("<button id=open>Click Aquí</button>")
+
+$("#open").click((e)=>{
+    $(".modal__container").classList.add(`show`)
+    alert(prueba)
+});
+
+$(".modal").append("<button id=close></button>")
+
+$("#close").click((e)=>{
+    $(".modal__container").classList.remove(`show`)
+});*/
+
+const open = document.getElementById(`open`);
+const modalContainer = document.getElementById(`modalContainer`);
+const close = document.getElementById(`close`);
+
+open.addEventListener(`click`, () =>{
+    modalContainer.classList.add(`show`)
+});
+
+close.addEventListener(`click`, ()=>{
+    modalContainer.classList.remove(`show`)
+})
 
 
-//Variables globales
-
-const marca = "Cardeno Vinos"
-
-/*Saludo e ingreso
-
-let nombre = prompt("Cuál es tu nombre?")
-
-let saludo = nombre + "," + " " + "bienvenid@ a" + " " + marca 
-
-let edad = prompt(nombre +" "+"Cuántos años tenés?")
-
-if (edad >= 18){
-    alert(saludo + " "+ "seguí navegando por nuestra web y llevate las mejores ofertas!");
-}else {
-    alert(nombre + "," + "volvé con un mayor o cuando tengas 18, estaremos esperándote" )
-}*/
 
 
 //Animaciones
@@ -32,6 +39,8 @@ $(".header__img").animate({
                 .delay(1000)
                 .slideDown(2000);
      
+
+
 
 //Objeto: Cerveza
 
@@ -153,6 +162,7 @@ mostrarPromo()
 
 const btnMostrar = document.getElementById("mostrar2")
 btnMostrar.addEventListener("click", mostrarPromo)
+
 
 
 

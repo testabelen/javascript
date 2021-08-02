@@ -17,11 +17,14 @@
 </head>
 <body>
 
+
 <!--header-->
 <header class="header__fondo">
       <img src="img/logo.jpg" alt="Logo Cardeno Vinos" class="header__img">
     
   </header> 
+
+
 
 <!--nav-->
 <nav class="navbar">
@@ -34,6 +37,22 @@
     
 </ul>
 </nav>
+  <!--Ventana Emergente-->
+  <button id=open>
+    Click Aquí
+</button>
+
+<div class="modal__container" id="modalContainer">
+    <div class="modal">
+        <h1>¿Tenés más de 18 años?</h1>
+
+        <p>Permanecer y comprar en esta web está permitido sólo a personas mayores de edad.</p>
+        
+        <button id=close>
+            Entendido
+        </button>
+    </div>
+</div>
 
 <!--Productos-->
 <section class="container productos">
@@ -49,8 +68,10 @@
     <p>Tres promos imperdibles para el mes del amigo!</p>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam rerum quidem voluptatem unde sint.</p>
-</section> 
-
+    
+    </section> 
+   
+    
 <!--Encuesta-->
 <input type="checkbox" class="barra__checkbox">
     <label class="barra" for="check">*</label>
